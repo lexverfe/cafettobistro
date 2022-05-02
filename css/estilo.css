@@ -1,0 +1,329 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'titulos';
+    src: url("../fontes/Hitchcut-typeface/Hitchcut-Regular.ttf")
+    
+}
+/*
+Cores no site:
+plano de fundo gradiente: #B746DB / #4D5ADB
+interface: azure
+títulos em geral: #73EBA1
+post (texto): black
+sombras: #73eba1
+
+*/
+
+body {
+    background-color: black;
+}
+
+div#interface {
+    background-color: brown;
+    width: 1200px;
+    margin: -20px auto 10px auto;
+    border-radius: 5px;
+    box-shadow: 10px 5px 10px #73eba1; 
+}
+
+/* Formatação do cabeçalho da página */
+
+header#topo {
+    height: 135px;
+    border-bottom: 1px #741b05 solid;
+}
+
+header#topo hgroup {
+    padding: 5px;
+    text-align: center;
+}
+
+header#topo hgroup h1 {
+    font-family: 'titulos';
+    font-size: 30pt;
+    color: #ce2e06;
+    margin: 5px 0px;
+}
+
+header#topo hgroup h2 {
+    font-family: 'titulos';
+    font-size: 12pt;
+    color: #ce2e06;
+    margin: 0px;
+    margin-left: 70px;
+}
+
+header#topo figure {
+    display: block;
+    position: relative;
+    top: 0px;
+    left: 500px;
+}
+
+header#topo figure figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+    display: none;
+}
+
+header#topo figure figcaption h1 {
+    font-size: 8pt;
+    margin: 0px;
+}
+
+header#topo figure figcaption:hover {
+    opacity: 1;
+}
+
+/* Formatação da área de postagens. */
+
+section#principal {
+    display: block;
+    float: left;
+    border-right: 1px #741b05 solid;
+    padding: 0px 5px;
+    width: 800px;
+    margin-top: 0px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+section#principal h1 {
+    font-family: 'titulos';
+    font-size: 10pt;
+    font-weight: bold;
+    color: #ce2e06;
+    margin: 0px;
+    margin-top: 3px;
+}
+
+section#principal hgroup#cabecalho h1 {
+    font-family: 'titulos';
+    font-size: 36pt;
+    color: #ce2e06;
+    margin: 0px;
+    margin-top: 3px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.4);
+}
+
+section#principal hgroup#cabecalho h2 {
+    font-family: 'titulos';
+    font-size: 20pt;
+    color: #ce2e06;
+    margin: 0px;
+    text-align: justify;
+}
+
+section#principal hgroup#cabecalho h3 {
+    font-family: 'titulos';
+    font-size: 10pt;
+    color: #ce2e06;
+    margin: 0px;
+}
+
+section#principal p {
+    text-align: justify;
+    text-indent: 50px;
+}
+
+section#principal p a {
+    color: orange;
+    text-decoration: none;
+}
+
+section#principal p a:hover {
+    text-decoration: underline;
+}
+
+section#principal h1 {
+    font-family: 'titulos';
+    font-size: 14pt;
+    color: #ce2e06;
+    margin: 0px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+}
+
+section#principal article {
+    border-bottom: 1px black dotted;
+}
+
+nav#navegacao h1 {
+    display: none;
+}
+
+nav#navegacao ul {
+    list-style: none;
+    text-transform: uppercase;
+}
+
+nav#navegacao li {
+    display: inline-block;
+    background-color: #B746DB;
+    padding: 5px;
+    margin: 2px;
+    transition: background-color 1s;
+    border-radius: 3px;
+    box-shadow: 3px 3px 10px #73eba1;
+    border-color: azure;
+    color: #73EBA1;
+}
+
+nav#navegacao li:hover {
+    background-color: #4D5ADB;
+}
+
+nav#navegacao a {
+    color: #73EBA1;
+    text-decoration: none;
+}
+
+nav#navegacao a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+section#principal figure {
+    display: block;
+    position: relative;
+    width: 300px;
+    left: 150px;
+}
+
+section#principal figure figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+
+section#principal figure figcaption h1 {
+    font-size: 8pt;
+    margin: 0px;
+}
+
+section#principal figure figcaption:hover {
+    opacity: 1;
+}
+/* Formatação da área do menu. */
+
+aside#lateral {
+    display: block;
+    float: right;
+    margin: 3px auto 3px 3px;
+}
+
+nav#menu {
+    padding: 5px;
+    display: inline-block;
+}
+
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: relative;
+    top: -20px;
+    right: 20px;
+}
+
+nav#menu li {
+    background-color: red;
+    padding: 5px;
+    margin: 2px;
+    transition: background-color 1s;
+    border-radius: 3px;
+    box-shadow: 3px 3px 10px #73eba1;
+    border-color: azure;
+    color: #73EBA1;
+    display: inline-block;
+}
+
+nav#menu li:hover {
+    background-color: #4D5ADB;
+}
+
+nav#menu h1 {
+    display: none;
+}
+
+nav#menu a {
+    color: #73EBA1;
+    text-decoration: none;
+}
+
+nav#menu a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Formatação da área rodapé. */
+
+footer#final {
+    clear: both;
+    padding: 0px 5px;
+    border-top: 1px #741b05 solid;
+}
+footer#final p {
+    clear: both;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+nav#rodape-01 {
+    display: block;
+    float: left;
+}
+
+nav#rodape-01 h1 {
+    font-size: 10pt;
+    margin: 0px;
+    margin-top: 2px;
+    color: #73EBA1;
+}
+
+nav#rodape-01 ul {
+    list-style: none;
+    margin: 0px;
+}
+
+nav#rodape-01 li {
+    font-size: 10pt;
+    color: #73EBA1;
+    background-color: #B746DB;
+    padding: 5px;
+    margin: 2px;
+    transition: background-color 1s;
+    border-radius: 3px;
+    box-shadow: 3px 3px 10px #73eba1;
+    text-align: center;
+}
+
+nav#rodape-01 li:hover {
+    background-color: #4D5ADB;
+}
+
+nav#rodape-01 a {
+    color: #73EBA1;
+    text-decoration: none;
+}
+
+nav#rodape-01 a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
