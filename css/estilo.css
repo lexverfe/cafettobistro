@@ -11,7 +11,6 @@ interface: azure
 títulos em geral: #73EBA1
 post (texto): black
 sombras: #73eba1
-
 */
 
 body {
@@ -41,14 +40,14 @@ header#topo hgroup {
 header#topo hgroup h1 {
     font-family: 'titulos';
     font-size: 30pt;
-    color: #ce2e06;
+    color: #B8A711;
     margin: 5px 0px;
 }
 
 header#topo hgroup h2 {
     font-family: 'titulos';
     font-size: 12pt;
-    color: #ce2e06;
+    color: #B8A711;
     margin: 0px;
     margin-left: 70px;
 }
@@ -99,15 +98,24 @@ section#principal h1 {
     font-family: 'titulos';
     font-size: 10pt;
     font-weight: bold;
-    color: #ce2e06;
+    color: #B8A711;
     margin: 0px;
     margin-top: 3px;
 }
 
+section#principal h1 a {
+    color: #b8a711;
+}
+
+section#principal img {
+    display: block;
+    position: relative;
+    margin: 2px auto 2px auto;
+}
 section#principal hgroup#cabecalho h1 {
     font-family: 'titulos';
     font-size: 36pt;
-    color: #ce2e06;
+    color: #B8A711;
     margin: 0px;
     margin-top: 3px;
     text-align: center;
@@ -117,7 +125,7 @@ section#principal hgroup#cabecalho h1 {
 section#principal hgroup#cabecalho h2 {
     font-family: 'titulos';
     font-size: 20pt;
-    color: #ce2e06;
+    color: #B8A711;
     margin: 0px;
     text-align: justify;
 }
@@ -125,7 +133,7 @@ section#principal hgroup#cabecalho h2 {
 section#principal hgroup#cabecalho h3 {
     font-family: 'titulos';
     font-size: 10pt;
-    color: #ce2e06;
+    color: #B8A711;
     margin: 0px;
 }
 
@@ -146,7 +154,7 @@ section#principal p a:hover {
 section#principal h1 {
     font-family: 'titulos';
     font-size: 14pt;
-    color: #ce2e06;
+    color: #B8A711;
     margin: 0px;
     margin-top: 3px;
     margin-bottom: 3px;
@@ -253,7 +261,7 @@ aside#lateral p a:hover {
 aside#lateral h1 {
     font-family: 'titulos';
     font-size: 14pt;
-    color: #ce2e06;
+    color: #B8A711;
     margin: 0px;
     margin-top: 3px;
     margin-bottom: 3px;
@@ -358,4 +366,55 @@ nav#rodape-01 a {
 nav#rodape-01 a:hover {
     text-decoration: underline;
     font-weight: bold;
+}
+
+/*
+Galeria
+*/
+ul#galeria {
+    width: 600px;
+    margin: 0px auto;
+    padding: 50px;
+    overflow: hidden;
+    list-style: none;
+}
+
+ul#galeria li {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    border: 2px solid brown;
+    background-color: antiquewhite;
+    box-shadow: 1px 1px 3px #ce2e06;
+}
+
+ul#galeria li spam {
+    opacity: 0;
+    color: brown;
+    text-shadow: 1px 1px 1px white;
+    background-color: rgba(0,0,0,0.4);
+    font-size: 10pt;
+    line-height: 370px;
+    padding: 3px;
+}
+
+ul#galeria li:hover spam {
+    opacity: 1;
+}
+
+ul#galeria li:hover {
+    -webkit-transform: scale(1.5);
+    -webkit-transition: all 0.5s ease-in;
+}
+
+ul#galeria li#evento-01 {
+    background: url(../imagens/pet-maio-250.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: 250px 250px;
+}
+
+ul#galeria li#evento-01:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
 }
